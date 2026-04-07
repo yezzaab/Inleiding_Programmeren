@@ -6,16 +6,15 @@ html, body {
 body {
   display: grid;
   grid-template-rows: auto 1fr auto; 
-  height: 100vh;
   margin: 0; 
 }
 
 /* Achtergrond afbeelding*/
 #background{
-    z-index: -1;
-    position: absolute;
-    height: 100vh;
-    width: 100vw;
+position: absolute;
+z-index: -50;
+left: 0;
+width: 100%;
 
 }
 
@@ -24,18 +23,18 @@ body {
 
 .image-container {
   position: relative;
-  width: 50em;
-  height: 50em;
+  width: 30em;
+  height: 30em;
+  
 }
 
 /* Pointer events toegevoegd: https://www.w3schools.com/cssref/css3_pr_pointer-events.php*/
 .layer {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-    
+  width: 30em;
+  height: auto;
+  align-items: center;
+
 }
 
  
@@ -76,25 +75,26 @@ header {
   gap: 1em;
   text-align: center;
   z-index: 3;
+  margin: 1em;
   margin-top: -1em;
 }
 
 h1{
     color: white;
-    font-size: 3em;
+    font-size: 2em;
     margin-bottom: 0.1em;
 }
 
 input{
   width: 8em;
   font-size: 1em;
-  padding: 0.5em;
+  padding: 0.3em;
 }
 
 /*Ik heb online een pre-made button gevonden en deze aangepast https://getcssscan.com/css-buttons-examples (button 29)*/
 button{
   width: 10em;
-  height: 3em;
+  height: 2em;
   font-size: 1em;
   font-weight: bold;
   align-items: center;
@@ -130,6 +130,7 @@ button:hover {
   left: 19em;
   width: 14em;
   height: 4em;
+  
 }
 
 /* Blush Zone */
@@ -143,31 +144,33 @@ button:hover {
 
 /* Lip zone */
 .lippen {
+  z-index: 10000;
   top: 32em;
   left: 21em;
   width: 10em;
   height: 5em;
+  border: 5px solid, red;
   
 }
 
 audio{
   position: absolute;
-  right: 20vw;
-  top: 21vh;
-}
+  right: 13vw;
+  top: 25vh;
+  transform: scale(0.8)
 
-#finishButton{
-  margin-bottom: 2em;
-  transform: scale(1.5);
-}
-
-#finishButton:hover {
-  transform: scale(1.5) translateY(2px);
-  transition: 0.2s;
 }
  
 
+#finishButton{
+  margin-top: 1.5em;
+  transform: scale(1.2);
+}
 
+#finishButton:hover{
+  transform: scale(1.2) translateY(2px);
+  transition: 0.2s;
+}
 
 
 
