@@ -1,12 +1,11 @@
-html, body {
-  display: grid;
-  place-items: center;
-}
+
  
 body {
   display: grid;
+  place-items: center;
   grid-template-rows: auto 1fr auto; 
   margin: 0; 
+  overflow: hidden;
 }
 
 /* Achtergrond afbeelding*/
@@ -126,38 +125,35 @@ button:hover {
 
 /* Oogschaduw zone*/
 .oogschaduw {
-  top: 25em;
-  left: 19em;
-  width: 14em;
-  height: 4em;
+  top: 15em;
+  left:12em;
+  width: 6.5em;
+  height: 2em;
   
 }
 
 /* Blush Zone */
 .blush {
-  top: 29em;
-  left: 21em;
-  width: 10em;
-  height: 3em;
+  top: 17em;
+  left:12em;
+  width: 6.5em;
+  height: 2em;
  
 }
 
 /* Lip zone */
 .lippen {
-  z-index: 10000;
-  top: 32em;
-  left: 21em;
-  width: 10em;
-  height: 5em;
-  border: 5px solid, red;
+  top: 19em;
+  left:13em;
+  width: 6em;
+  height: 3em;
   
 }
 
 audio{
-  position: absolute;
-  right: 13vw;
-  top: 25vh;
-  transform: scale(0.8)
+  position: relative;
+  transform: scale(0.8);
+  margin: 1em;
 
 }
  
