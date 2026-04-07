@@ -1,0 +1,175 @@
+html, body {
+  display: grid;
+  place-items: center;
+}
+ 
+body {
+  display: grid;
+  grid-template-rows: auto 1fr auto; 
+  height: 100vh;
+  margin: 0; 
+}
+
+/* Achtergrond afbeelding*/
+#background{
+    z-index: -1;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+
+}
+
+
+/* Afbeeldingen Makeup pop */
+
+.image-container {
+  position: relative;
+  width: 50em;
+  height: 50em;
+}
+
+/* Pointer events toegevoegd: https://www.w3schools.com/cssref/css3_pr_pointer-events.php*/
+.layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+    
+}
+
+ 
+/* Afbeeldingen lagen levels*/
+
+/* outline opties https://www.w3schools.com/css/css_outline.asp */
+#MakeupPop {
+  z-index: 0;
+  pointer-events: none;
+  outline: 7px ridge white;
+}
+
+#toggleOogschaduw {
+  z-index: 1;
+}
+
+#toggleBlush {
+  z-index: 2;
+}
+
+#toggleLippen {
+  z-index: 3;
+  
+}
+
+/*haar is van https://www.freepik.com/premium-ai-image/png-brown-hair-stlye-adult-white-background-hairstyle_413378771.htm#fromView=keyword&page=1&position=27&uuid=e6beb61b-dd4a-4e37-adf0-fe2dbe83fb47&query=Hair+png+cartoon en dan lichtelijk aangepast in Photoshop*/
+#toggleHaar {
+z-index: 4;
+display: none;
+
+}
+
+/* Naam invoer*/
+header {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr;
+  gap: 1em;
+  text-align: center;
+  z-index: 3;
+  margin-top: -1em;
+}
+
+h1{
+    color: white;
+    font-size: 3em;
+    margin-bottom: 0.1em;
+}
+
+input{
+  width: 8em;
+  font-size: 1em;
+  padding: 0.5em;
+}
+
+/*Ik heb online een pre-made button gevonden en deze aangepast https://getcssscan.com/css-buttons-examples (button 29)*/
+button{
+  width: 10em;
+  height: 3em;
+  font-size: 1em;
+  font-weight: bold;
+  align-items: center;
+  appearance: none;
+  background-image: radial-gradient(100% 100% at 100% 0, #e0bdee 0, #e930c1 100%);
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  transform: translateY(2px);
+  transition: 0.2s;
+}
+
+
+
+
+
+
+/* Click Zones*/
+.clickzone {
+  position: absolute;
+  z-index: 10; 
+  cursor: pointer;
+}
+
+/* Oogschaduw zone*/
+.oogschaduw {
+  top: 25em;
+  left: 19em;
+  width: 14em;
+  height: 4em;
+}
+
+/* Blush Zone */
+.blush {
+  top: 29em;
+  left: 21em;
+  width: 10em;
+  height: 3em;
+ 
+}
+
+/* Lip zone */
+.lippen {
+  top: 32em;
+  left: 21em;
+  width: 10em;
+  height: 5em;
+  
+}
+
+audio{
+  position: absolute;
+  right: 20vw;
+  top: 21vh;
+}
+
+#finishButton{
+  margin-bottom: 2em;
+  transform: scale(1.5);
+}
+
+#finishButton:hover {
+  transform: scale(1.5) translateY(2px);
+  transition: 0.2s;
+}
+ 
+
+
+
+
+
+
+

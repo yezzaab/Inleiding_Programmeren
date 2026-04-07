@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make-Over</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head> 
+<body>
+
+    <header>
+    <h1 id="displayName"> Geef jouw look een naam!</h1>
+    <input type="text" id="nameInput" placeholder="Vul in">
+    <button id="submitButton">Gereed</button>
+    </header>
+
+     <img src="images/Background.jpg" alt="Background" id="background">
+   
+
+  <div class="image-container">
+
+    <img src="images/schaduwTransparant.png" class="layer" id="toggleOogschaduw">
+    <img src="images/blushTransparant.png" class="layer" id="toggleBlush">
+    <img src="images/lipsTransparant.png" class="layer" id="toggleLippen">
+    <img src="images/Haar.png" class="layer" id="toggleHaar">
+    <img id="MakeupPop" src="images/3.png" class="layer">
+
+    <!-- Clickzones in HTML toevoegen https://www.w3schools.com/tags/tag_area.asp -->
+    <area class="clickzone oogschaduw"></area>
+    <area class="clickzone blush"></area>
+    <area class="clickzone lippen"></area>
+
+</div>
+
+<button id="finishButton">Klaar</button>
+
+<!-- Hoe je audio toevoegd met de controls https://stackoverflow.com/questions/6529645/how-to-add-background-music-to-a-web-page-->
+<audio autoplay="autoplay" controls="controls">
+     <source src="music/barbieGirl.mp3" />     
+ </audio>
+
+    
+</body>
+
+<script src="javascript.js"></script>
+
+</html>
